@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forgotPass.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min..css">
+    <script src="https://use.fontawesome.com/0c7a3095b5.js"></script>
+    <title>Reset Password</title>
+</head>
+<body>
+    <div class="bg-image"></div>
+
+    <div class="bg-text">
+        
+        <h2>Reset Password</h2>
+
+      <form action="/action_page.php" class="container">
+    
+        <input type="text" placeholder="Enter Username" name="username" required>
+    
+        <input type="password" placeholder="Enter New Password" name="psw" id="myInput1" required>
+        <input type="password" placeholder="Confirm Password" name="psw" id="myInput2" required>
+        <input type="checkbox" onclick="myFunction()">Show Password 
+
+       <h4><a class="btn" href="index.html" onclick="alert('Password successfuly changed')">Reset Password</a></h4>
+
+        
+      </div>
+
+      <script>  
+
+        //untuk show confirm password
+        function myFunction() {
+          var x = document.getElementById("myInput2");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+
+        </script>
+
+</body>
+</html>
